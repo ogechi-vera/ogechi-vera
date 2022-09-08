@@ -17,16 +17,17 @@ const styles = {
   content: {
     display: "flex",
     justifyContent: "center",
-    fontFamily: "Roboto, sans-serif",
-    color: "#041836",
+    fontFamily: "Lora",
+    color: "#953553",
     marginTop: "130px",
     padding: "10px",
+    background: "#002366",
   },
   header: {
     position: "fixed",
     zIndex: 1,
     width: "100%",
-    background: "#fff",
+    background: "#002366",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -34,6 +35,9 @@ const styles = {
     borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
     padding: "0 10px",
     boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
+  },
+  language:{
+    color:"		#32CD32",
   },
   headerRight: {
     display: "flex",
@@ -67,7 +71,7 @@ const App = ({ isServerInfo }) => {
                 <Main/>
             </Route>
             <Route path="/nonauthenticated">
-              <h3>Please login using the "Authenticate" button</h3>
+              <h3 style={styles.content}>The redeemed Christian Church of God, if God be for us who can be against us</h3>
             </Route>
           </Switch>
           {isAuthenticated ? <Redirect to="/main" /> : <Redirect to="/nonauthenticated" />}
@@ -77,6 +81,6 @@ const App = ({ isServerInfo }) => {
   );
 };
 
-export const Logo = () => <h4>Decentradit</h4>
+export const Logo = () => <h4 style={styles.language} >ABRAHAMS VILLA</h4>
 
 export default App;

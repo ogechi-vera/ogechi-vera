@@ -16,11 +16,11 @@ const styles = {
     alignItems: "center",
     width: "fit-content",
     borderRadius: "12px",
-    backgroundColor: "rgb(244, 244, 244)",
+    backgroundColor: "	#7CFC00",
     cursor: "pointer",
   },
   text: {
-    color: "#21BF96",
+    color: "#ff0000",
   },
 };
 
@@ -35,7 +35,7 @@ function Account() {
         style={styles.account}
         onClick={() => authenticate({ signingMessage: "Hello World!" })}
       >
-        <p style={styles.text}>Authenticate</p>
+        <p style={styles.text}> THE LORD IS GOOD </p>
       </div>
     );
   }
@@ -53,11 +53,11 @@ function Account() {
         footer={null}
         onCancel={() => setIsModalVisible(false)}
         bodyStyle={{
-          padding: "15px",
-          fontSize: "17px",
-          fontWeight: "500",
+          padding: "20px",
+          fontSize: "20px",
+          fontWeight: "800",
         }}
-        style={{ fontSize: "16px", fontWeight: "500" }}
+        style={{ fontSize: "20px", fontWeight: "800" }}
         width="400px"
       >
         Account
@@ -67,9 +67,9 @@ function Account() {
             borderRadius: "1rem",
           }}
           bodyStyle={{ padding: "15px" }}
-        >
+        >font family:"Raleway",
           <Address
-            avatar="left"
+            avatar="right"
             size={6}
             copyable
             style={{ fontSize: "20px" }}
@@ -92,8 +92,8 @@ function Account() {
             width: "100%",
             marginTop: "10px",
             borderRadius: "0.5rem",
-            fontSize: "16px",
-            fontWeight: "500",
+            fontSize: "20px",
+            fontWeight: "800",
           }}
           onClick={() => {
             logout();
